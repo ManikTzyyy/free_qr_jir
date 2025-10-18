@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>qr_jir</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body class="bg-slate-900 text-white">
+    <div class="flex items-center justify-center flex-col gap-2 ">
+      <h1 class="text-5xl">My QR Free LoLLL</h1>
+      <div class="flex flex-col pt-5">
+        <label for="text" class="text-slate-300 text-xs">Input Text Here Chigga</label>
+        <input type="text" name="text" id="text" class="border-indigo-50 border rounded-sm p-1 text-sm"/>
+        <br>
+        <button id="generate" class="bg-white text-gray-900 p-1 rounded-lg hover:bg-slate-300 transition ease-in hover:cursor-pointer">submit</button>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-3 justify-center items-center pt-10 pb-2">
+      <h2>Output here</h2>
+      <canvas id="canvas" class=""></canvas>
+    </div>
+    
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
