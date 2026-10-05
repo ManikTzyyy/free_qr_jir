@@ -9,9 +9,9 @@
   </head>
   <body class="bg-slate-900 text-white">
     <div class="flex items-center justify-center flex-col gap-2 ">
-      <h1 class="text-5xl">My QR Free LoLLL</h1>
+      <h1 class="text-5xl">My QR Free </h1>
       <div class="flex flex-col pt-5">
-        <label for="text" class="text-slate-300 text-xs">Input Text Here Chigga</label>
+        <label for="text" class="text-slate-300 text-xs">Input Text Here</label>
         <input type="text" name="text" id="text" class="border-indigo-50 border rounded-sm p-1 text-sm"/>
         <br>
         <button id="generate" class="bg-white text-gray-900 p-1 rounded-lg hover:bg-slate-300 transition ease-in hover:cursor-pointer">submit</button>
@@ -20,7 +20,18 @@
 
     <div class="flex flex-col gap-3 justify-center items-center pt-10 pb-2">
       <h2>Output here</h2>
-      <canvas id="canvas" class=""></canvas>
+      <canvas id="canvas" class="rounded-xl"></canvas>
+      <div class="flex flex-col gap-2 w-full max-w-xs">
+        <label for="quality" class="text-slate-300 text-xs">Kualitas download</label>
+        <select id="quality" class="bg-white text-gray-900 border rounded-sm p-1 text-sm">
+          <option value="1">1x</option>
+          <option value="2">2x</option>
+          <option value="3">3x</option>
+          <option value="5">5x</option>
+        </select>
+        <span id="file-size" class="text-slate-300 text-xs">Ukuran file: -</span>
+        <button id="download" disabled class="bg-emerald-400 text-gray-950 p-1 rounded-lg hover:bg-emerald-300 transition ease-in hover:cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">Download PNG</button>
+      </div>
     </div>
     
 
